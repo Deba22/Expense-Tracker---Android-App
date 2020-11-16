@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:minWidth="25px"
+    android:minHeight="25px">
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Let's get started by adding your first expense."
+        android:id="@+id/textView1"
+        android:shadowColor="#ff4a4a4a"
+        android:textColor="#ffffffff"
+           android:layout_marginHorizontal="20dp"
+        android:fontFamily="sans-serif-condensed"
+              android:textSize="20sp" />
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GOT IT"
+        android:id="@+id/textView2"
+       android:textColor="#efbe5d"
+           android:layout_marginHorizontal="20dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="10dp"
+         android:layout_marginBottom="70dp"
+    
+              android:textSize="16sp" />
+   
+</LinearLayout>

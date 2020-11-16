@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Expense Tracker</string>
+    <string name="action_settings">Settings</string>
+  <string name="search">Search</string>
+  <string name="Dollar">\u0024</string>
+  <string name="DollarCurrency">US Dollar</string>
+  <string name="Pound">\u00A3</string>
+  <string name="PoundCurrency">Pounds Sterling</string>
+  <string name="Yen">\u00A5</string>
+  <string name="YenCurrency">Japanese Yen</string>
+  <string name="Euro">\u20AC</string>
+  <string name="EuroCurrency">Euro</string>
+  <string name="Rs">\u20B9</string>
+  <string name="RsCurrency">Indian Rupee</string>
+  <string name="facebook_app_id">366676324725990</string>
+  <string name="fb_login_protocol_scheme">fb366676324725990</string>
+
+</resources>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ android:background="@android:color/white">
+    <android.support.v7.widget.Toolbar
+         android:id="@+id/tbsettings"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" 
+         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+		android:background="#fff">
+		 </android.support.v7.widget.Toolbar>
+    <TextView 
+		android:text="Settings"
+		android:textSize="32sp" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+		    android:textAlignment="viewStart"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="serif"
+            android:textColor="#204060">
+		</TextView>
+    <android.support.v7.widget.CardView
+               android:id="@+id/settingscardview"  
+                  android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="18dp"
+    android:layout_width="match_parent"  
+            android:layout_marginBottom="30dp"
+           app:cardCornerRadius="4dp"
+            app:cardBackgroundColor="#ecf2f9"
+    android:layout_height="wrap_content" >
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           android:orientation="vertical">
+     <TextView 
+		android:text="Select your currency"
+		android:textSize="18sp" 
+	android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+	android:layout_height="wrap_content"
+		    android:textAlignment="viewStart"
+            android:layout_marginHorizontal="8dp"
+            android:fontFamily="serif"
+            android:textColor="#204060">
+		</TextView>
+
+   <Spinner
+        android:id="@+id/currencyspinner"
+           android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                  />
+              <View
+        android:background="#9d9d9d"
+                  android:layout_marginHorizontal="8dp"
+                android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+          
+             <TextView 
+                    android:id="@+id/txtorderby"
+		android:text="Order expenses by"
+		android:textSize="18sp" 
+	android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+                  android:layout_marginBottom="10dp"
+	android:layout_height="wrap_content"
+		    android:textAlignment="viewStart"
+            android:layout_marginHorizontal="8dp"
+            android:fontFamily="serif"
+            android:textColor="#204060">
+		</TextView>
+            <RadioGroup
+                    android:id="@+id/radiogrp"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+                   android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                     <RadioButton android:id="@+id/radio_Expense_Date"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Expense Date" />
+                   
+                    <TextView
+                        android:id="@+id/txtdefault"
+                        android:layout_marginLeft="5dp"
+                        android:text="(by default)"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:textColor="#9d9d9d"/>
+                </LinearLayout>
+  <RadioButton
+                        android:id="@+id/radio_Submission_Date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Submission Date" />
+</RadioGroup>
+                 
+		  <View
+        android:background="#9d9d9d"
+                  android:layout_marginHorizontal="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+             <LinearLayout
+                android:id="@+id/appintro"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="horizontal">
+                 <TextView 
+                    android:id="@+id/txtprivacy"
+		android:text="App Intro"
+		android:textSize="18sp" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+		    android:textAlignment="viewStart"
+            android:layout_marginHorizontal="8dp"
+            android:fontFamily="serif"
+            android:textColor="#204060"/>
+                 <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />         
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                      android:layout_marginRight="8dp"
+                    android:src="@drawable/chevron_right"
+                    android:contentDescription="description" />
+                </LinearLayout>
+              <View
+        android:background="#9d9d9d"
+                  android:layout_marginHorizontal="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+              <LinearLayout
+                android:id="@+id/privacy"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="horizontal">
+                 <TextView 
+                    android:id="@+id/txtprivacy"
+		android:text="Privacy Policy"
+		android:textSize="18sp" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+		    android:textAlignment="viewStart"
+            android:layout_marginHorizontal="8dp"
+            android:fontFamily="serif"
+            android:textColor="#204060"/>
+                 <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />         
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                      android:layout_marginRight="8dp"
+                    android:src="@drawable/chevron_right"
+                    android:contentDescription="description" />
+                </LinearLayout>
+          
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

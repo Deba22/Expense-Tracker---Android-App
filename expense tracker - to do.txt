@@ -1,0 +1,33 @@
+Expense categories
+----------------------
+
+Food and Dining
+Shopping
+Travelling
+Entertainment
+Medical
+Personal Care
+Education
+Bills and Utilities
+Banking 
+Rent
+Taxes
+Insurance
+Gifts and Donations
+Other
+
+--------------------------
+
+Month wise spending - done
+
+Category wise spending - done
+Google Forms feedback form
+Currency modal at start - done
+icon in list- item category - done
+more stats on analysis tab 
+add first expense-tutorial - done
+"No expenses" if empty - done
+Add more currencies -done
+Dark theme/light theme - consider transferring your existing projects to AndroidX
+Profile pic taking time to load if internet connection is poor
+

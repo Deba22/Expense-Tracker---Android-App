@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:checkableBehavior="single">
+    <item
+android:id="@+id/nav_settings"
+android:icon="@drawable/settingsicon"
+android:title="Settings" />
+    <item
+android:id="@+id/nav_rating"
+android:icon="@drawable/ratingicon"
+android:title="Rate Expense Tracker" />
+    <item
+android:id="@+id/nav_FeedBack"
+android:icon="@drawable/emailicon"
+android:title="Send us your FeedBack" />
+    <item
+android:id="@+id/nav_Logout"
+android:icon="@drawable/logouticon"
+android:title="Logout" />
+  </group>
+</menu>

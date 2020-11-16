@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<android.support.design.widget.CoordinatorLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+     <LinearLayout 
+	android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ android:background="@android:color/white">
+	<android.support.v7.widget.Toolbar
+         android:id="@+id/toolbarstats"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" 
+         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+		android:background="#fff">
+		
+        
+          </android.support.v7.widget.Toolbar>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+          >
+	<TextView 
+		android:text="Analysis"
+		android:textSize="32sp" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+		    android:textAlignment="viewStart"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="serif"
+            android:textColor="#204060">
+		</TextView>
+            <ImageView
+                android:id="@+id/showpiechart"
+                android:layout_toLeftOf="@+id/showbarchart"
+                android:padding="8dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/pie_chartselectedicon"
+                android:background="@drawable/curved_pieselected"
+                android:contentDescription="piechart" />
+             <ImageView
+                android:id="@+id/showbarchart"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:padding="8dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/bar_chartnotselectedicon"
+                android:background="@drawable/curved_barnotselected"
+                android:contentDescription="barchart" />
+       
+            </RelativeLayout>
+     <android.support.v7.widget.CardView
+               android:id="@+id/datecardview"  
+                  android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="18dp"
+    android:layout_width="match_parent"
+            android:layout_marginBottom="30dp"
+           app:cardCornerRadius="4dp"
+            app:cardBackgroundColor="#ecf2f9"
+    android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+              <LinearLayout
+                android:id="@+id/statstypecontainer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+                	<TextView 
+                    android:id="@+id/analysistype"
+                    android:layout_marginLeft="10dp"
+		android:text="Month-wise expenses"
+		android:textSize="18sp" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+		    android:textAlignment="viewStart"
+       
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#204060"/>
+  <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />     
+                    <RelativeLayout
+                        android:id="@+id/monthcontainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Spinner
+       android:id="@+id/monthspinner"
+                          
+        android:layout_width="60dp"
+        android:background="@null"
+        android:layout_height="25dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                             android:layout_alignParentTop="true"
+                             android:tint="@color/colorPrimary"
+        android:layout_alignEnd="@+id/monthspinner"
+        android:layout_alignRight="@+id/monthspinner" 
+        android:src="@drawable/baseline_arrow_drop_down_24"
+        android:layout_alignTop="@id/monthspinner"/>
+</RelativeLayout>
+           
+                </LinearLayout>
+            <View
+                 android:background="#e2e2e2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <RelativeLayout
+               
+              android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView 
+                    android:id="@+id/statsdata"
+                    android:layout_marginLeft="10dp"
+		android:text="No data"
+		android:textSize="18sp" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+		    android:textAlignment="viewStart"
+                           android:visibility="invisible"
+                    android:layout_centerInParent="true"
+        android:fontFamily="serif"
+            android:textColor="#cccccc"/>
+                  <ProgressBar
+   android:id="@+id/progressBarStats"
+
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+        android:visibility="visible"
+                    android:layout_centerInParent="true"/>  
+                    <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barchartStats"
+                        android:visibility="invisible"
+                android:layout_width="match_parent"
+                 android:layout_height="300dp"/>
+                      <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechartStats"
+                android:layout_width="match_parent"
+                 android:layout_height="300dp"/>
+               <!-- <Microcharts.Droid.ChartView
+                    android:id="@+id/chartview"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"/>-->
+        </RelativeLayout>
+                 <View
+                 android:background="#e2e2e2"
+                android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                android:layout_height="1dp"/>
+                 <TextView 
+                    android:id="@+id/statstype"
+                             android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="10dp"
+		android:text=""
+		android:textSize="18sp" 
+	android:layout_width="wrap_content"
+		    android:textAlignment="viewStart"
+        android:fontFamily="sans-serif-condensed"
+            android:textColor="#204060"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+       
+    <android.support.design.button.MaterialButton
+        android:id="@+id/generatePDF"
+        android:text="Generate Report"
+         android:textAllCaps="false"
+        app:backgroundTint="#efbe5d"
+    app:cornerRadius="18dp"
+    app:strokeColor="#efbe5d"
+             app:iconPadding="20dp"
+        app:iconGravity="textStart"
+        app:icon="@drawable/pdficon"
+    app:strokeWidth="2dp"
+            android:visibility="invisible"
+        android:layout_marginTop="10dp"
+          android:layout_marginHorizontal="20dp"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+			
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

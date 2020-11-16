@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+			xmlns:android="http://schemas.android.com/apk/res/android"
+	 xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+ android:gravity="center"
+	android:background="#fff"
+>
+    <ImageView
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_gravity="center"
+        android:contentDescription="description" 
+		android:src="@drawable/intro2image"/>
+		<TextView 
+			android:text="This is a simple way to manage and track your day-to-day expenses"
+	android:fontFamily="serif"
+			android:textSize="20sp"
+		android:textColor="#204060"
+			android:textAlignment="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="16dp"
+		/>
+		</LinearLayout>
